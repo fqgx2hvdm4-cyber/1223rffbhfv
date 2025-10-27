@@ -1,0 +1,72 @@
+body {
+  background: #f2f5f8; /* світлий фон */
+  color: #222;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #004a80;
+}
+
+iframe {
+  display: block;
+  width: 90%;
+  max-width: 800px;
+  height: 450px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+iframe[src*="maps.google"],
+iframe[src*="bing.com/maps"] {
+  height: 400px;
+}
+
+iframe[src*="youtube"],
+iframe[src*="youtube-nocookie"] {
+  height: 315px;
+}
+
+iframe[src*="spotify"] {
+  border-radius: 12px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.fb-page {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.sin-informer {
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+body > * {
+  text-align: center;
+}
+
+.caption {
+  font-size: 0.9rem;
+  color: #5b3a29; /* темно-коричневий колір для підписів */
+  margin-top: 8px;
+}
+
+.footer-quote {
+  font-size: 1rem;
+  color: #5b
