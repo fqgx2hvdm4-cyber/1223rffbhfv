@@ -9,7 +9,17 @@
 <body>
   <h1>Лаб 6 — Львівська політехніка: карти, відео, віджети</h1>
 
-  <!-- ---------- Панорамна карта (Street View) ---------- -->
+  <!-- Основна карта Google для Львівської політехніки -->
+  <section>
+    <h2>Львівська політехніка — місце (вбудована карта)</h2>
+    <iframe
+      src="https://www.google.com/maps?q=Stepana+Bandery+12+Lviv&output=embed"
+      width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <p class="caption">Адреса: вул. Степана Бандери, 12, Львів — головний навчальний корпус Львівської політехніки</p>
+  </section>
+
+  <!-- Панорамний вигляд поряд із корпусом -->
   <section>
     <iframe
       width="800" height="450" style="border:0"
@@ -20,7 +30,7 @@
     <p class="caption">Панорамний вигляд поряд із корпусом (координати приблизні: 49.8348, 24.0145)</p>
   </section>
 
-  <!-- ---------- Bing Maps ---------- -->
+  <!-- Bing Maps — огляд -->
   <section>
     <h2>Bing Maps — огляд</h2>
     <iframe
@@ -29,7 +39,7 @@
     </iframe>
   </section>
 
-  <!-- ---------- YouTube embeds ---------- -->
+  <!-- YouTube embeds -->
   <section>
     <h2>Відео з YouTube</h2>
     <iframe width="560" height="315"
@@ -47,22 +57,91 @@
     </iframe>
   </section>
 
-  <!-- ---------- Spotify embeds ---------- -->
+  <!-- Spotify embeds -->
   <section>
     <h2>Музика — Spotify</h2>
-
-    <!-- Пісня 1 -->
     <iframe
       src="https://open.spotify.com/embed/track/4uLU6hMCjMI75M1A2tKUQC"
       width="300" height="80" frameborder="0"
       allowtransparency="true" allow="encrypted-media" loading="lazy">
     </iframe>
 
-    <!-- Пісня 2 -->
-    <iframe
+    <iframe 
       src="https://open.spotify.com/embed/track/56wSomSllGESHGhcfHrvEw?utm_source=generator"
       width="300" height="80" frameborder="0"
       allowtransparency="true" allow="encrypted-media" loading="lazy">
     </iframe>
   </section>
 
+  <!-- Facebook сторінки -->
+  <section>
+    <h2>Facebook — сторінки громади / університету</h2>
+
+    <!-- Facebook Page Embed — Lviv City -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+      src="https://connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v17.0" nonce="ABC123"></script>
+    <div class="fb-page"
+         data-href="https://www.facebook.com/LvivCityOfficial"
+         data-tabs="timeline"
+         data-width="500"
+         data-height="700"
+         data-small-header="false"
+         data-adapt-container-width="true"
+         data-hide-cover="false"
+         data-show-facepile="true">
+    </div>
+
+    <!-- Facebook Page Embed — Lviv Polytechnic -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+      src="https://connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v17.0" nonce="ABC123"></script>
+    <div class="fb-page"
+         data-href="https://www.facebook.com/lvivpolytechnic/"
+         data-tabs="timeline"
+         data-width="500"
+         data-height="700"
+         data-small-header="false"
+         data-adapt-container-width="true"
+         data-hide-cover="false"
+         data-show-facepile="true">
+    </div>
+  </section>
+
+  <!-- Sinoptik informer -->
+  <section>
+    <h2>Інформер погоди (Sinoptik)</h2>
+    <link rel="stylesheet" href="https://sinoptik.ua/resources/informer/css/informer.css">
+    <div class="sin-informer sin-informer_font-Arial sin-informer_theme-light" style="width:170px;" data-lang="uk">
+      <div class="sin-informer__header">
+        <a class="sin-informer__logo-link" href="https://sinoptik.ua" target="_blank" rel="nofollow">
+          <img class="sin-informer__logo-image" width="66" height="20"
+               src="https://sinoptik.ua/resources/informer/assets/icons/logo.png"
+               alt="Sinoptik - logo">
+        </a>
+        <p class="sin-informer__date">Погода на найближчий час</p>
+        <p class="sin-informer__time" data-format="24"><span class="sin-informer__time-icon"></span></p>
+      </div>
+      <div class="sin-informer__main sin-informer__main_inline">
+        <a class="sin-informer__entry" href="https://sinoptik.ua/pohoda/lviv" target="_blank" rel="nofollow">
+          <p class="sin-informer__location">Львів</p>
+        </a>
+      </div>
+      <div class="sin-informer__footer">
+        Погода від <a class="sin-informer__domain-link" href="https://sinoptik.ua" target="_blank" rel="nofollow">sinoptik.ua</a>
+      </div>
+    </div>
+    <script src="https://sinoptik.ua/api/informer/content?loc=PSgYBwgv2rhnPUVHBQCubSN5&cem=GOF0gO90cr=SiKFEGSjuPwiV2nE5GMu4CndxCrAlbw9rbrCnPSio"></script>
+  </section>
+
+  <!-- Кінець сторінки — цитата -->
+  <footer>
+    <blockquote class="footer-quote">
+      "І дивляться леви на тебе ласкаво<br>
+      І варять бажання із запахом кави<br>
+      І вільно на розі між пеклом і раєм<br>
+      У Львові так просто своє не вмирає!"
+    </blockquote>
+  </footer>
+</body>
+</html>
